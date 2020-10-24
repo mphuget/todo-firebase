@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/mphuget/todo-firebase/issues"
   },
-  "homepage": "https://github.com/mphuget/todo-firebase#readme"
+  "homepage": "https://github.com/mphuget/todo-firebase#readme",
+  "dependencies": {
+    "firebase-admin": "^9.3.0"
+  }
 }
