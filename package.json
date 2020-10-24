@@ -1,0 +1,24 @@
+{
+  "name": "todo-firebase",
+  "version": "1.0.0",
+  "description": "Use of Cloud Firestore for Todo ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mphuget/todo-firebase.git"
+  },
+  "keywords": [
+    "Node.js",
+    "Express",
+    "Firestore"
+  ],
+  "author": "Marc-Philippe Huget",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mphuget/todo-firebase/issues"
+  },
+  "homepage": "https://github.com/mphuget/todo-firebase#readme"
+}
