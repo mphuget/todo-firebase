@@ -21,5 +21,19 @@ function addTodo(id, title, description) {
 
 }
 
-addTodo("shopping", "Shopping", "Take the shopping list");
+//addTodo("shopping", "Shopping", "Take the shopping list");
+
+async function getTodos() {
+    const todosRef = db.collection('todos');
+    const snapshot = await todosRef.get();
+    let documents = {};
+
+    snapshot.forEach(doc => {
+      documents[doc.id] = doc.data();
+    });
+
+    return documents;
+}
+
+getTodos().then((documents) => console.log(documents));
 
