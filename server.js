@@ -60,4 +60,10 @@ async function updateTodo(id, title, description) {
     });
 }
 
-updateTodo("laundry", "Do the laundry", "Check the basket");
+//updateTodo("laundry", "Do the laundry", "Check the basket");
+
+async function deleteTodo(id) {
+    await db.collection('todos').doc(id).delete(); 
+}
+
+//deleteTodo();
