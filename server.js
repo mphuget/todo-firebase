@@ -35,5 +35,19 @@ async function getTodos() {
     return documents;
 }
 
-getTodos().then((documents) => console.log(documents));
 
+//getTodos().then((documents) => console.log(documents));
+
+async function getTodo(id) {
+    const todoRef = db.collection('todos').doc(id);
+    const doc = await todoRef.get();
+    if (!doc.exists) {
+        return null; 
+    } 
+    else {
+        return doc.data();
+    }
+
+}
+
+getTodo("laundry").then((doc) => console.log(doc));
