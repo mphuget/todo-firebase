@@ -50,4 +50,14 @@ async function getTodo(id) {
 
 }
 
-getTodo("laundry").then((doc) => console.log(doc));
+//getTodo("laundry").then((doc) => console.log(doc));
+
+async function updateTodo(id, title, description) {
+    const idTodo = await
+    db.collection('todos').doc(id).update({
+        title: title, 
+        description : description
+    });
+}
+
+updateTodo("laundry", "Do the laundry", "Check the basket");
